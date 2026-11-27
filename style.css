@@ -256,3 +256,33 @@ nav a:hover {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* JavaScript Scroll Reveal Animation */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Active Navigation Link */
+
+nav ul li a.active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Accessibility: Reduce Motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
