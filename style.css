@@ -176,3 +176,83 @@ footer {
         padding: 55px 6%;
     }
 }
+
+/* Professional Website Improvements */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Sticky Navigation */
+header,
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+}
+
+/* Navigation Hover */
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Button Animation */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+/* Card Hover */
+.card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Project Hover */
+.project-card a {
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #1d4ed8;
+}
+
+/* Contact Hover */
+.contact-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
