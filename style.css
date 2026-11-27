@@ -305,3 +305,17 @@ footer {
         font-size: 29px;
     }
 }
+/* EDUCATION SECTION */
+
+#education .project {
+    max-width: 650px;
+    border-left: 4px solid var(--primary);
+}
+
+#education .project h3 {
+    color: var(--text);
+}
+
+#education .project p {
+    color: var(--muted);
+}
